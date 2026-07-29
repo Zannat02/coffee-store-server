@@ -26,10 +26,14 @@ const client = new MongoClient(uri, {
 
 async function run() {
   try {
-   
+    
+    console.log("run() function started");
     await client.connect();
 
+    console.log("MongoDB Connected Successfully");
+
     const coffeesCollection = client.db('coffeeDB').collection('coffees');
+    console.log("Collections created");
 
     const usersCollection = client.db('coffeeDB').collection('users') ;
 
