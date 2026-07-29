@@ -130,6 +130,10 @@ app.get('/', (req , res) =>{
     res.send('Coffee server is getting hotter.')
 });
 
-app.listen(port, () =>{
-    console.log(`Coffee server is running on port ${port}`)
-})
+if (process.env.NODE_ENV !== "production") {
+  app.listen(port, () => {
+    console.log(`Coffee server is running on port ${port}`);
+  });
+}
+
+module.exports = app;
