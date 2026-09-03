@@ -93,4 +93,4 @@ The server is structured for **Vercel** serverless deployment — `app.listen()`
 
 ## 🔗 Related
 
-This is the backend for the [Espresso Emporium client](#) (React + Vite frontend).
+This is the backend for the [Espresso Emporium client](https://github.com/Zannat02/coffee-store-client-with-auth) (React + Vite frontend).
